@@ -61,7 +61,7 @@ export async function hook(cdp) {
 
     // Replace with the site that has the Cloudflare JavaScript check
     // that runs the first time you visit it.
-    await Page.navigate({ url: 'https://example.com/' });
+    await Page.navigate({ url: 'https://app.warera.io/' });
     await Page.loadEventFired();
 
     hook_logger.info('Waiting until Cloudflare JavaScript challenge is complete.');
